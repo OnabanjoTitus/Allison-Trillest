@@ -13,8 +13,8 @@ import java.util.List;
 public class UserServicesImpl implements UserServices {
 
     @Override
-    public void pickCart(User user,Cart cart) {
-      user.setCart(cart);
+    public void pickCart(User user) {
+      user.setCart(new Cart());
     }
 
     @Override

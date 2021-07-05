@@ -7,7 +7,7 @@ import com.trillestojay.trillest.data.model.User;
 import java.util.List;
 
 public interface UserServices {
-    void pickCart(User user,Cart cart);
+    void pickCart(User user);
     void emptyCart(Cart cart);
     List<Products> Checkout(Cart cart);
 }
