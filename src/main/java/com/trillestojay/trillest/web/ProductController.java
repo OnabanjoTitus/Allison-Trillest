@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class ProductController {
     @GetMapping("")
     public String testConnection(){
-        return "We are On";
+        return "index";
     }
     @PostMapping("")
     public String testConnections(){
-        return "We are On";
+        return "We are On post";
     }
 }
