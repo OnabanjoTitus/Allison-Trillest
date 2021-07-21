@@ -10,6 +10,17 @@ import org.springframework.stereotype.Service;
 public class CartServicesImpl implements CartServices{
     @Autowired
     UserServices userServices;
+    @Autowired
+    CartRepository cartRepository;
+
+    @Override
+    public Cart createCart() {
+        return createNewCart();
+    }
+
+    private Cart createNewCart() {
+        return cartRepository.save(new Cart());
+    }
 
     @Override
     public void addToCart(Cart cart,Products products) {

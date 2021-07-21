@@ -1,4 +1,4 @@
-package com.trillestojay.trillest.web;
+package com.trillestojay.trillest.web.Controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
